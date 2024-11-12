@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Hyperlink Extractor",
+    "version": "1.0",
+    "description": "웹페이지의 하이퍼링크 텍스트와 URL을 추출하는 확장프로그램",
+    "permissions": [
+      "activeTab",
+      "clipboardWrite"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
